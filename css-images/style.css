@@ -5,9 +5,11 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-li, a, a:link button {
+li, a, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -15,7 +17,7 @@ li, a, a:link button {
 }
 
 header {
-  height: 90px;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,12 +28,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #7C6DFE;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .nav__hatim {
-  padding-top: 4rem;
-  cursor: pointer;
+  padding-top: 3rem;
   padding-left: 10rem;
+  size: 50%;
 }
 
 .nav__github {
@@ -44,12 +47,60 @@ header {
 .nav__ul {
   list-style-type: none;
   /*On est obligé d'attaché list-style à un élément d'ul ou li*/
-  padding-right: 5em;
+  padding-right: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 .nav__ul li {
   display: inline-block;
   /*On est obligé de les référés en tant qu'individu pour les espacés sur une seule ligne*/
   padding: 0px 2rem;
+}
+
+.resume {
+  background-color: #f5f5f5;
+  height: 100vh;
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.resume-presentation {
+  padding-top: 5vh;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.resume-img {
+  padding-left: 5vh;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.resume-title {
+  font-size: 24px;
+  font-weight: 400;
+  width: 145vh;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.resume-title span {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
