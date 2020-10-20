@@ -62,42 +62,24 @@ header {
   background-color: #f5f5f5;
   height: 100vh;
   padding-top: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vh 50vh auto 0vh 0vh;
+      grid-template-columns: 50vh 50vh auto 0vh 0vh;
 }
 
 .resume-presentation {
   padding-top: 5vh;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  word-spacing: .2rem;
 }
 
 .resume-img {
   padding-left: 5vh;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
 }
 
 .resume-title {
   font-size: 24px;
   font-weight: 400;
-  width: 145vh;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
 }
 
 .resume-title span {
