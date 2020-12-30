@@ -40,21 +40,22 @@ header{
 }
 
 .nav__hatim{
-    padding-top: 3rem;
+
     padding-left: 10rem;
     size: 50%;
+    position: absolute;
 }
 
 .nav__github{
-    padding-top:2.5rem;
     cursor: pointer; /*Mettre un pointeur curseur comme pour des liens*/
-    padding-bottom: 3rem;
-
+    position: absolute;
+    z-index: 1;
+    margin-left: 45em;
+    margin-top: -1.9em;
 }
 
 .nav__ul{
     list-style-type: none; /*On est obligé d'attaché list-style à un élément d'ul ou li*/
-    padding-right: 3.5em;
     text-transform: uppercase;
     letter-spacing: .1rem;
     li{
