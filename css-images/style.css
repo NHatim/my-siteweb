@@ -2,24 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 
-li, a, button {
+li, a, .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
 
-header {
+nav {
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #7C6DFE;
-  border-radius: 0px 0px 20px 20px; }
+  border-radius: 0px 0px 20px 20px;
+  min-height: 8vh; }
 
 .nav__hatim {
   padding-left: 10rem;
@@ -35,13 +38,14 @@ header {
   margin-top: -1.9em; }
 
 .nav__ul {
+  display: flex;
+  width: 30%;
+  justify-content: left;
   list-style-type: none;
   /*On est obligé d'attaché list-style à un élément d'ul ou li*/
   text-transform: uppercase;
   letter-spacing: .1rem; }
   .nav__ul li {
-    display: inline-block;
-    /*On est obligé de les référés en tant qu'individu pour les espacés sur une seule ligne*/
     padding: 0px 2rem; }
 
 .resume {
